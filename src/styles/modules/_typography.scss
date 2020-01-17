@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap&subset=cyrillic');
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.8;
+}
+
+//
+// HEADINGS
+//
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	line-height: 1.2;
+	color: inherit;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+h1 {
+	line-height: 2;
+	font-size: 42px;
+	color: $baltic-sea-color;
+}
+
+h2 {
+	font-size: 36px;
+	line-height: 1.7;
+	color: $baltic-sea-color;
+}

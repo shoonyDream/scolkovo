@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/eb448ec1e0.js" crossorigin="anonymous"></script>
+        <title>Проект</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header--desktop">
+                <div class="header__top">
+                    <div class="container container--wide">
+                        ${require('./templates_area/top-nav.html')}
+                    </div>
+                </div>
+                <div class="header__main">
+                    <div class="container container--wide">
+                        <div class="logo">
+                            <img src="../images/logo.png" alt="logo" title="logo">
+                        </div>
+                        ${require('./templates_area/main-tools.html')}
+                        <a href="#" class="header__basket">
+                            <img src="../images/basket.svg" alt="basket" title="basket">
+                            <span>4</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <div class="container container--wide">
+                        ${require('./templates_area/main-nav.html')}
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="page-wrapper">
+            <main class="content">
+                <div class="container container--wide">
