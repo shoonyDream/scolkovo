@@ -5,6 +5,15 @@
 	padding-bottom: 60px;
 }
 
+.subindex {
+	justify-content: space-between;
+
+	.page-wrapper {
+		flex: none;
+    	padding-bottom: 0;
+	}
+}
+
 body {
     margin-top: 0 !important;
 }
@@ -22,7 +31,7 @@ body {
 }
 
 .logo img {
-	width: 200px;
+	width: 50px;
 }
 
 .tablet-show {
@@ -31,6 +40,17 @@ body {
 
 .mobile-show {
 	display: none!important;
+}
+
+.row {
+	z-index: 1;
+	display: flex;
+	position: relative;
+}
+
+.col {
+	max-width: 33.333%;
+	flex-basis: 33.333%;
 }
 
 @media (max-width: 1150px) {

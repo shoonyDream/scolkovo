@@ -1,4 +1,11 @@
+.bottom-container {
+    flex: none;
+}
+
 .footer {
+    z-index: 1;
+    position: relative;
+    
     .link {
         color: $white;
 
