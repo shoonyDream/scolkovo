@@ -1,13 +1,14 @@
 import Swiper from 'swiper/js/swiper.min.js';
 
-var galleryThumbs = new Swiper('.gallery-thumbs', {
+let galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 10,
   slidesPerView: 6,
   freeMode: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
 });
-var galleryTop = new Swiper('.gallery-top', {
+
+let galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 10,
   effect: 'fade',
   thumbs: {

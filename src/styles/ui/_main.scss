@@ -10,12 +10,14 @@
 
 	.page-wrapper {
 		flex: none;
+		margin-top: auto;
     	padding-bottom: 0;
 	}
 }
 
 body {
     margin-top: 0 !important;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -26,12 +28,14 @@ body {
 	padding-right: 20px;
 
 	&--wide {
-		max-width: 1350px;
+		max-width: 1500px;
 	}
 }
 
-.logo img {
-	width: 50px;
+.logo {
+	img {
+		width: 110px;
+	}
 }
 
 .tablet-show {
@@ -40,17 +44,6 @@ body {
 
 .mobile-show {
 	display: none!important;
-}
-
-.row {
-	z-index: 1;
-	display: flex;
-	position: relative;
-}
-
-.col {
-	max-width: 33.333%;
-	flex-basis: 33.333%;
 }
 
 @media (max-width: 1150px) {
@@ -76,4 +69,8 @@ body {
 	.mobile-show {
 		display: inline-block!important;
 	}
+}
+
+.content {
+    padding: 50px 0;
 }

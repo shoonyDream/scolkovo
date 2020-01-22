@@ -11,7 +11,7 @@
 		margin-top: 0;
 		overflow: hidden;
 		position: relative;
-		padding-bottom: 50%;
+		padding-bottom: 56.25%;
 
 		.tile__link {
 			top: 0;
@@ -61,8 +61,76 @@
 	}
 }
 
+.main-page-media {
+    z-index: 1;
+    display: flex;
+    position: relative;
+    margin: 0 -40px;
 
+    &__gallery {
+	    max-width: 30%;
+	    flex-basis: 30%;
+	    padding: 0 40px;
+	    flex-shrink: 0;
+	}
 
-.gallery-container {
+	&__figure {
+	    flex-shrink: 0;
+	    max-width: 45%;
+	    flex-basis: 45%;
+	    padding: 20px 40px;
+	}
 
+	&__news {
+	    max-width: 25%;
+	    flex-basis: 25%;
+	    padding: 0 40px;
+	    flex-shrink: 0;
+	}
+}
+
+.figure-container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 520px;
+}
+
+.figure-list {
+    display: flex;
+    height: 100%;
+    margin-left: -10px;
+    margin-right: -10px;
+    justify-content: center;
+
+    &__item {
+	    max-width: 33.333%;
+	    flex-basis: 33.333%;
+	    height: 100%;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+}
+
+.tile--figure {
+    position: relative;
+    border: 1px solid #727272;
+
+    .tile__body {
+	    bottom: 0;
+	    z-index: 2;
+	    padding: 15px 0;
+	    position: absolute;
+	    background: rgba(0,0,0,0.9);
+	}
+
+	.tile__title {
+	    color: #fff;
+	    font-size: 15px;
+	    text-transform: initial;
+	    font-weight: 400;
+	}
+
+	.tile__img {
+	    padding-bottom: 70%;
+	}
 }

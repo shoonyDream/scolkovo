@@ -16,39 +16,80 @@
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 	}
+
+	&:after {
+		top: 0;
+		left: 0;
+		z-index: 1;;
+		content: '';
+		width: 100%;
+		height:100%;
+		position: absolute;
+		background: linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0) 50%);
+	}
 }
 
 .gallery-thumbs {
 	.swiper-slide {
-		opacity: 0.4;
 		cursor: pointer;
+		filter: grayscale(100%);
+		transition: filter 0.2s linear;
 
 		&:hover {
-			opacity: 0.8;
+			filter: grayscale(20%);
 		}
 	}
 
+	.tile {
+		transform: scale(0.9);
+		border: 1px solid transparent;
+	}
+
 	.swiper-slide-thumb-active {
-		opacity: 1;
+		filter: grayscale(0%);
+
+		.tile {
+			transform: scale(1.3);
+			border-color: #747474;
+		}
+	}
+
+	.swiper-wrapper {
+		align-items: center;
+	}
+
+	&.swiper-container {
+		padding: 10px 60px 10px 40px;
 	}
 }
 
 .gallery-container {
-	padding-top: 80px;
+	margin: 0 -40px;
+	padding-top: 90px;
 	position: relative;
 }
 
 .gallery-text {
-    top: 0;
-    left: 20px;
-    z-index: 1;
-    position: absolute;
+	top: 0;
+	left: 40px;
+	z-index: 1;
+	position: absolute;
 
-    &__item {
+	&__item {
+		color: #fff;
 		display: none;
+		font-size: 18px;
+		line-height: 1.35;
+		overflow: hidden;
 
 		&.is-active {
 			display: block;
+		}
+
+		> span {
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
 		}
 	}
 }
