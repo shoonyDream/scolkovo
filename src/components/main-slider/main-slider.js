@@ -9,6 +9,9 @@ let galleryThumbs = new Swiper('.gallery-thumbs', {
 });
 
 let galleryTop = new Swiper('.gallery-top', {
+  autoplay: {
+    delay: 5000,
+  },
   spaceBetween: 10,
   effect: 'fade',
   thumbs: {

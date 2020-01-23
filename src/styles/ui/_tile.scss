@@ -78,7 +78,7 @@
 		flex-shrink: 0;
 		max-width: 45%;
 		flex-basis: 45%;
-		padding: 20px 40px;
+		padding: 0 40px;
 	}
 
 	&__news {
@@ -125,9 +125,10 @@
 
 	.tile__title {
 		color: #fff;
+		padding: 0 10px;
 		font-size: 15px;
-		text-transform: initial;
 		font-weight: 400;
+		text-transform: initial;
 	}
 
 	.tile__img {
