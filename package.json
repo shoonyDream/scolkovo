@@ -2,13 +2,13 @@
   "name": "evrika",
   "version": "1.0.0",
   "description": "",
-  "repository": "https://github.com/shoonyDream/evrika",
+  "repository": "https://github.com/shoonyDream/scolkovo",
   "main": "index.js",
   "scripts": {
     "start": "npm run build:dev",
     "build:dev": "webpack-dev-server --env dev --mode none",
     "build:prod": "webpack --env prod --mode production",
-    "predeploy": "cross-env DEPLOY_KEY=/evrika yarn build:prod",
+    "predeploy": "cross-env DEPLOY_KEY=/scolkovo yarn build:prod",
     "deploy": "gh-pages -d dist"
   },
   "author": "mwieth",
