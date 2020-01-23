@@ -103,9 +103,9 @@
 	justify-content: center;
 
 	&__item {
+		height: 100%;
 		max-width: 33.333%;
 		flex-basis: 33.333%;
-		height: 100%;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -113,20 +113,21 @@
 
 .tile--figure {
 	position: relative;
-	border: 1px solid #727272;
+	border: 1px solid $dove-gray;
 
 	.tile__body {
 		bottom: 0;
 		z-index: 2;
-		padding: 15px 0;
+		padding: 10px 0;
 		position: absolute;
 		background: rgba(0,0,0,0.9);
 	}
 
 	.tile__title {
-		color: #fff;
+		color: $white;
+		width: 100%;
 		padding: 0 10px;
-		font-size: 15px;
+		font-size: 12px;
 		font-weight: 400;
 		text-transform: initial;
 	}
@@ -134,9 +135,80 @@
 	.tile__img {
 		padding-bottom: 70%;
 	}
+
+	img {
+		transform: scale(1);
+		will-change: transform;
+		transition: transform 0.2s linear;
+	}
+
+	&:hover img {
+		transform: scale(1.1);
+	}
 }
 
-.tile--news .tile__img {
-	max-width: 140px;
-	padding-bottom: 21%;
+.tile--news {
+	.tile {
+		&__img {
+			max-width: 140px;
+			padding-bottom: 26%;
+		}
+
+		&__body {
+			padding-top: 8px;
+
+			+ .link {
+				margin-top: 14px;
+			}
+		}
+
+		&__title {
+			color: $mischka;
+			font-size: 13px;
+			text-align: left;
+			font-weight: 400;
+			text-transform: none;
+			padding-bottom: 2px;
+
+			background: linear-gradient(to right, 
+				rgba(255, 255, 255, 0.7) 50%,
+				rgba(255, 165, 0, 0.7),
+				rgba(255, 255, 0, 0.7),
+				rgba(0, 128, 0, 0.7),
+				rgba(0, 255, 255, 0.7),
+				rgba(0, 0, 255, 0.7),
+				rgba(238, 130, 238, 0.7)) 0% 1.1em no-repeat;
+			background-size: 300% 1px;
+			transition: background-position .5s ease, background-color .3s ease, color .3s ease;
+		}
+
+		&__link {
+			text-align: left;
+
+			img {
+				opacity: 1;
+				transition: opacity 0.2s linear;
+			}
+
+			&:hover {
+				.tile__title {
+					 background-position: 100% 1.1em;
+				}
+
+				img {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+
+	.details {
+		font-size: 0;
+
+		&__date {
+			color: $gray;
+			font-size: 11px;
+			font-style: italic;
+		}
+	}
 }

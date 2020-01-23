@@ -4,7 +4,7 @@ body {
 }
 
 body {
-	color: #333;
+	color: $mine-shaft;
 	width: 100%;
 	display: flex;
 	min-width: 320px;
@@ -47,8 +47,8 @@ small {
 }
 
 mark {
-	background-color: #000;
-	color: #000;
+	background-color: $black;
+	color: $black;
 }
 
 //
