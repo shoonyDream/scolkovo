@@ -76,14 +76,14 @@
 
 	&__figure {
 		flex-shrink: 0;
-		max-width: 45%;
-		flex-basis: 45%;
+		max-width: 40%;
+		flex-basis: 40%;
 		padding: 0 40px;
 	}
 
 	&__news {
-		max-width: 25%;
-		flex-basis: 25%;
+		max-width: 30%;
+		flex-basis: 30%;
 		padding: 0 40px;
 		flex-shrink: 0;
 	}
@@ -124,8 +124,8 @@
 	}
 
 	.tile__title {
-		color: $white;
 		width: 100%;
+		color: $white;
 		padding: 0 10px;
 		font-size: 12px;
 		font-weight: 400;
@@ -151,7 +151,7 @@
 	.tile {
 		&__img {
 			max-width: 140px;
-			padding-bottom: 26%;
+			padding-bottom: 19%;
 		}
 
 		&__body {

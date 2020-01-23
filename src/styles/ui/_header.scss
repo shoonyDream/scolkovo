@@ -1,9 +1,8 @@
 .header {
-    margin-top: 35px;
-
     flex: none;
     z-index: 1;
     font-size: 13px;
+    margin-top: 35px;
     position: relative;
     
     &--desktop {
@@ -28,8 +27,8 @@
 
     &__tools {
         top: 50%;
-        color: $white;
         right: 20px;
+        color: $white;
         display: block;
         position: absolute;
         text-decoration: none;
@@ -41,9 +40,9 @@
             font-size: 12px;
             margin-left: 15px;
             border-radius: 50%;
+            transform: scale(1);
             align-items: center;
             display: inline-flex;
-            transform: scale(1);
             justify-content: center;
             background-color: $sunset-orange;
             transition: transform 0.2s linear;
@@ -52,7 +51,6 @@
         &-text {
             font-size: 13px;
             letter-spacing: -1px;
-
             padding-bottom: 0.2em;
             background: linear-gradient(to right, 
                 rgba(255, 255, 255, 0.6) 50%, 
@@ -130,7 +128,7 @@
         &:before {
             left: 0;
             top: 50%;
-            color: #999;
+            color: $dusty-gray;
             content: '/';
             font-size: 20px;
             font-weight: 300;
@@ -156,7 +154,7 @@
             content: '';
             position: absolute;
             transform: skew(-23deg);
-            background-color: #494547;
+            background-color: $tundora;
             transition: opacity 0.2s linear;
         }
 
@@ -173,8 +171,8 @@
 
     &__link {
         z-index: 2;
-        color: $black;
         height: 100%;
+        color: $black;
         display: flex;
         font-size: 12px;
         padding: 0 16px;
@@ -199,14 +197,14 @@
     transform: translateX(-50%);
 
     &__header {
-        color: #fff;
         width: 255px;
+        color: $white;
         margin: 0 auto;
         font-size: 15px;
         text-align: center;
         position: relative;
-        background-color: #333;
         padding: 10px 20px 30px;
+        background-color: $mine-shaft;
 
         i {
             bottom: 0;
@@ -223,7 +221,7 @@
     }
 
     &__body {
-        background: #fff;
+        background: $white;
         padding: 10px 20px;
         position: relative;
     }
@@ -244,13 +242,13 @@
         right: -40px;
         cursor: pointer;
         position: absolute;
-        background-color: #333;
+        background-color: $mine-shaft;
 
         i {
             top: 50%;
             left: 50%;
-            color: #fff;
             opacity: 0.6;
+            color: $white;
             font-size: 27px;
             position: absolute;
             transform: translate(-50%, -50%);
