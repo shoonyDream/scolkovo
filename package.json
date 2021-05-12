@@ -43,7 +43,7 @@
     "body-scroll-lock": "^2.6.4",
     "jquery": "2",
     "normalize.css": "^8.0.1",
-    "swiper": "^5.0.3",
+    "swiper": "^6.5.1",
     "velocity-animate": "^1.5.2"
   }
 }
